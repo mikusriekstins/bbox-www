@@ -1,0 +1,112 @@
+// --------------------------------------------------------------------------
+// Grid layout
+// --------------------------------------------------------------------------
+
+.grid {
+  @include clearfix();
+
+  &--gutter {
+    margin-left: $grid-gutter/-2;
+    margin-right: $grid-gutter/-2;
+  }
+
+  &--flex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.col--5-12,
+.col--5-6,
+.col--2-3,
+.col--1-2,
+.col--1-6,
+.col--1-3 {
+  float: left;
+  min-height: 1px;
+  padding: 0 $grid-gutter/2;
+}
+
+@media screen and (min-color-index: 0) and (-webkit-min-device-pixel-ratio: 0) {
+    .col--lg-1-2 {
+      flex: 1 1;
+    }
+}
+
+@include grid-col(1, 2);
+@include grid-col(1, 3);
+@include grid-col(1, 6);
+@include grid-col(2, 3);
+@include grid-col(5, 6);
+@include grid-col(5, 12);
+
+@include grid-push(1, 3);
+@include grid-push(1, 4);
+@include grid-push(1, 6);
+@include grid-push(1, 12);
+
+// Responsive grid
+
+@media screen and (max-width: $bp-lg) {
+  .grid {
+    &--flex {
+      flex-wrap: wrap;
+    }
+  }
+
+  .col--lg-break {
+    float: none;
+    width: auto;
+
+    &[class*='push--'] {
+      margin-left: 0;
+    }
+  }
+
+  .push--lg-0 {
+    margin-left: 0;
+  }
+
+  @include grid-push(2, 5, "lg-");
+  @include grid-push(1, 6, "lg-");
+  @include grid-col(3, 5, "lg-");
+  @include grid-col(1, 2, "lg-");
+  @include grid-col(2, 3, "lg-");
+  @include grid-col(5, 6, "lg-");
+}
+
+@media screen and (max-width: $bp-md) {
+  .col--md-break {
+    float: none;
+    width: auto;
+
+    &[class*='push--'] {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-sm) {
+  .col--sm-break {
+    float: none;
+    width: 100%;
+
+    &[class*='push--'] {
+      margin-left: 0;
+    }
+
+    @include grid-col(3, 4, "sm-");
+  }
+}
+
+@media screen and (max-width: $bp-xs) {
+  .col--xs-break {
+    float: none;
+    width: auto;
+
+    &[class*='push--'] {
+      margin-left: 0;
+    }
+  }
+}

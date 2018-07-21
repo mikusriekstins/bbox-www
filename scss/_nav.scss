@@ -1,0 +1,153 @@
+// --------------------------------------------------------------------------
+// Navigation
+// --------------------------------------------------------------------------
+
+.nav {
+  max-width: rem(60);
+  padding: rem(18);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  z-index: $z-top;
+  background-color: #fff;
+  transition: max-width .3s $bezier;
+
+  &:hover {
+    max-width: rem(280);
+
+    .nav__link {
+      opacity: 1;
+    }
+  }
+
+  &:hover + .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__list {
+    @include unstyle-list;
+    @include clearfix;
+    min-width: rem(244);
+    margin: 0;
+    font-size: $font-size-small;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    > li {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    color: $gray-light;
+    display: block;
+    padding: rem(9) 0;
+    outline: none;
+    transition: color .2s $bezier;
+
+    &.is-active {
+      color: $gray-dark;
+    }
+
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+
+  &__index {
+    display: inline-block;
+    width: rem(24);
+    text-align: center;
+    margin-right: rem(14);
+  }
+
+  &__link {
+    opacity: 0;
+    transition: opacity .3s $bezier;
+  }
+
+  &__close,
+  &__toggle {
+    position: absolute;
+    display: none;
+
+    > svg {
+      display: block;
+      fill: $brand-primary;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-lg) {
+  .nav {
+    display: flex;
+    max-width: 100%;
+    transform: translate(-100%, 0);
+    transition: transform .2s $bezier;
+
+    &:hover {
+      max-width: 100%;
+
+      & + .overlay {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &.is-active {
+      transform: translate(0, 0);
+
+      & + .overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &__link {
+      opacity: 1;
+    }
+
+    &__toggle {
+      display: block;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+    }
+
+    &__close {
+      display: block;
+      top: rem(36);
+      left: rem(24);
+    }
+  }
+}
+
+@media screen and (max-width: $bp-sm) {
+  .nav {
+    &__list {
+      min-width: 220px;
+      font-size: $font-size-base;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: 0.05em;
+    }
+
+    &__toggle {
+      left: rem(20);
+    }
+
+    &__close { 
+      top: rem(20);
+      left: 20px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+
+// ------------------------------------------------------------
+// Base styles
+// ------------------------------------------------------------
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+body {
+  font-family: $font-family;
+  line-height: 1.5;
+  font-weight: 400;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $gray-lighter;
+  color: $gray-darker;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+@media screen and (min-width: $bp-xl) {
+  html { font-size: 125%; }
+}
+
+@media screen and (max-width: $bp-sm) {
+  html { font-size: 75%; }
+}
+
+a {
+  color: $brand-primary;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color .2s $bezier;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: $gray-dark;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  background-color: rgba($brand-primary, .15);
+  margin: rem(36) 0;
+  clear: both;
+}
+
+::selection {
+  background-color: $brand-primary;
+  color: #fff;
+}

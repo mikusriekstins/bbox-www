@@ -1,0 +1,101 @@
+
+// --------------------------------------------------------------------------
+// Footer
+// --------------------------------------------------------------------------
+
+.footer {
+  background-color: #fff;
+  padding: rem(60) 0;
+
+  a {
+    color: $gray-dark;
+
+    &:hover,
+    &:focus {
+      color: $brand-primary;
+    }
+  }
+
+  &__notice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    > p {
+      margin: 0;
+      margin-left: rem(24);
+    }
+
+    .footer__icon {
+      width: rem(68);
+      height: rem(68);
+      fill: $gray-dark;
+      margin: 0 rem(7);
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+  }
+
+  &__list {
+    @include unstyle-list;
+
+    li {
+      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+
+      &:first-child {
+        margin-right: rem(18);
+      }
+    }
+
+    p {
+      margin: 0;
+      color: $gray-dark;
+    }
+
+    a {
+      display: block;
+
+      &:hover,
+      &:focus {
+        .footer__icon {
+          fill: $brand-primary;
+        }
+      }
+    }
+
+    .footer__icon {
+      width: rem(24);
+      height: rem(24);
+      display: block;
+      fill: $gray-dark;
+      transition: fill .2s $bezier;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-lg) {
+  .footer {
+    &__notice {
+      text-align: center;
+      flex-wrap: wrap;
+
+      p {
+        flex: 0 0 100%;
+      }
+
+      .footer__icon {
+        margin-bottom: rem(16);
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: $bp-md) {
+
+}

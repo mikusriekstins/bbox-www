@@ -1,0 +1,23 @@
+
+// Buttons
+
+.button {
+  display: inline-block;
+  appearance: none;
+  padding: rem(8) rem(24);
+  background: transparent;
+  color: $brand-primary;
+  font-size: $font-size-base;
+  text-transform: uppercase;
+  margin: 0 rem(4) rem(8);
+  border-radius: 3px;
+  border: solid 1px $brand-primary;
+  transition: background-color .2s $bezier, color .2s $bezier, border-color .2s $bezier;
+
+  &:focus,
+  &:hover {
+    background-color: $gray-dark;
+    border-color: $gray-dark;
+    color: #fff;
+  }
+}

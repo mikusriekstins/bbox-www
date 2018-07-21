@@ -1,0 +1,152 @@
+
+// --------------------------------------------------------------------------
+// Typography
+// --------------------------------------------------------------------------
+
+p {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  margin: 0 0 1em;
+}
+
+// Headings
+// ------------------------------------------------------------
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: $font-family;
+  font-weight: 500;
+  margin: 0;
+}
+
+h1, .h1 {
+  font-family: $font-family-alt;
+  font-size: $font-size-h1;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: rem(-2);
+  margin: 0;
+}
+
+h2, .h2 {
+  font-family: $font-family-alt;
+  font-size: $font-size-h2;
+  letter-spacing: rem(-2);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 rem(24);
+}
+
+h3, .h3 {
+  font-size: $font-size-h3;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .05em;
+  line-height: 1.5;
+  margin: 0 0 1em;
+}
+
+h4, .h4 {
+  font-size: $font-size-h4;
+  line-height: 1.3;
+  margin: 0;
+}
+
+h5, .h5 {
+  font-size: $font-size-h5;
+  line-height: 1.4;
+  margin: 0;
+}
+
+ul,
+ol {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  padding-left: 1.5em;
+  margin: 0;
+}
+
+li {
+  margin-bottom: rem(6);
+}
+
+blockquote {
+  padding: 15px 0 15px $grid-gutter;
+  margin: 27px 0;
+  border-left: solid 66px $gray-light;
+  color: $gray-dark;
+  position: relative;
+
+  *:last-child {
+    margin: 0;
+  }
+}
+
+table {
+  width: 100%;
+  margin-bottom: rem(36);
+  font-size: $font-size-small;
+  line-height: $line-height-base;
+}
+
+thead {
+  color: $gray;
+}
+
+th {
+  text-align: left;
+  font-weight: 500;
+}
+
+th,
+td {
+  padding: rem(12) 0 rem(12) 0;
+  border-bottom: solid 1px #D9D9D9;
+
+  &:last-child {
+    padding-right: rem(12);
+  }
+}
+
+dl {
+  width: 100%;
+  @include clearfix;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  margin: 0;
+
+  dt,
+  dd {
+    float: left;
+    margin: 0 0 rem(4);
+  }
+
+  dt {
+    width: 60%;
+    font-weight: 900;
+    clear: left;
+  }
+
+  dd {
+    width: 40%;
+    padding-left: $grid-gutter;
+  }
+}
+
+@media screen and (max-width: $bp-lg) {
+  .h1,
+  h1 {
+    margin-bottom: rem(24);
+  }
+}
+
+@media screen and (max-width: $bp-md) {
+  .h1,
+  h1 {
+    font-size: rem(54);
+  }
+}

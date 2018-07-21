@@ -1,0 +1,115 @@
+
+// --------------------------------------------------------------------------
+// Text styles
+// --------------------------------------------------------------------------
+
+.text {
+  &--large > p,
+  &--large {
+    font-size: $font-size-large;
+  }
+
+  &--small > p,
+  &--small {
+    font-size: $font-size-small;
+  }
+
+  &--alt > p,
+  &--alt {
+    font-family: $font-family-alt;
+  }
+
+  &--center > p,
+  &--center {
+    text-align: center;
+  }
+
+  &--highlight {
+    color :$brand-primary;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--muted {
+    opacity: .75;
+  }
+
+  &--no-wrap {
+    white-space: nowrap;
+  }
+
+  &--framed {
+    margin: 0;
+
+    &:after,
+    &:before {
+      content: "";
+      height: 1px;
+      width: rem(76);
+      background-color: $gray-light;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &:before {
+      margin-bottom: rem(28);
+    }
+
+    &:after {
+      margin-top: rem(36);
+    }
+
+
+  }
+}
+
+.caption {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 700;
+  color: $brand-primary;
+  margin-bottom: rem(14);
+}
+
+
+@media screen and (max-width: $bp-lg) {
+  .text {
+    &--large > p,
+    &--large {
+      font-size: rem(24);
+    }
+
+    &--framed {
+      &:after,
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $bp-md) {
+  .text {
+    &--md-left {
+      text-align: left;
+    }
+
+    &--md-center {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-sm) {
+  .text {
+    &--sm-left {
+      text-align: left;
+    }
+  }
+}

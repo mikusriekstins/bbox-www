@@ -1,0 +1,26 @@
+
+// --------------------------------------------------------------------------
+// Container
+// --------------------------------------------------------------------------
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem($max-width + $side-spacing * 2);
+  min-width: $min-width;
+  padding: 0 $side-spacing;
+  @include clearfix;
+}
+
+@media screen and (max-width: $bp-xl) {
+  .container {
+    padding: 0 $side-spacing/2;
+  }
+}
+
+@media screen and (max-width: $bp-sm) {
+  .container {
+    padding: 0 22px;
+  }
+}

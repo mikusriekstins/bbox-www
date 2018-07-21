@@ -1,0 +1,73 @@
+
+// ------------------------------------------------------------
+// Global variables
+// ------------------------------------------------------------
+
+
+// Colors
+// ------------------------------------------------------------
+
+$brand-primary: #CB7C52;
+
+$gray-lighter: #F7F6F0;
+$gray-light: #C8C8C8;
+$gray: #4d4d4d;
+$gray-dark: #303030;
+$gray-darker: #0A0A0A;
+
+
+// Typography
+// ------------------------------------------------------------
+
+$font-family: "europa", Helvetica, Arial, sans-serif;
+$font-family-alt: "hagin-caps", Helvetica, Arial, sans-serif;
+
+$font-size-small: rem(14);
+$font-size-base: rem(18);
+$font-size-large: rem(27);
+$font-size-h5: rem(14);
+$font-size-h4: rem(14);
+$font-size-h3: rem(18);
+$font-size-h2: rem(54);
+$font-size-h1: rem(61);
+
+$line-height-base: 1.5;
+
+
+// Positioning
+// ========================================
+
+$z-top: 1000;
+$z-way-above: 100;
+$z-more-above: 50;
+$z-above: 10;
+$z-below: -1;
+
+
+// Layout
+// ========================================
+
+$grid-gutter: 30px;
+$max-width: 1330px;
+$min-width: 320px;
+$side-spacing: 15px;
+
+
+// Animation
+// ========================================
+
+$bezier: cubic-bezier(.41,.39,.26,1);
+
+// Breakpoints
+// ========================================
+
+$bp-xxl: 1920px;
+$bp-xl: 1600px;
+$bp-lg: 1024px;
+$bp-md: 768px;
+$bp-sm: 568px;
+$bp-xs: 360px;
+
+
+
+
