@@ -6,7 +6,8 @@
   width: 100%;
   padding: $s-md 0;
   margin-bottom: rem(-102);
-  position: relative;
+  position: fixed;
+  background: linear-gradient(rgba($gray-darker, .5), rgba($gray-darker, 0));
   z-index: $z-above;
 }
 
