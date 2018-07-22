@@ -4,19 +4,14 @@
 // --------------------------------------------------------------------------
 
 .text {
-  &--large > p,
-  &--large {
+  &--lg > p,
+  &--lg {
     font-size: $font-size-large;
   }
 
-  &--small > p,
-  &--small {
+  &--sm > p,
+  &--sm {
     font-size: $font-size-small;
-  }
-
-  &--alt > p,
-  &--alt {
-    font-family: $font-family-alt;
   }
 
   &--center > p,
@@ -37,7 +32,7 @@
   }
 
   &--muted {
-    opacity: .75;
+    opacity: .4;
   }
 
   &--no-wrap {

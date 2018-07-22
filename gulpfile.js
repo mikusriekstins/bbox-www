@@ -6,7 +6,7 @@ var sassPaths = [
 ];
 
 gulp.task('sass', function() {
-  return gulp.src('css/main.scss')
+  return gulp.src('scss/main.scss')
     .pipe(sass({
       includePaths: 'scss',
       outputStyle: 'compressed'

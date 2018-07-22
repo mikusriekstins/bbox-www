@@ -12,26 +12,27 @@ $brand-primary: #CB7C52;
 $gray-lighter: #F7F6F0;
 $gray-light: #C8C8C8;
 $gray: #4d4d4d;
-$gray-dark: #303030;
+$gray-dark: #151515;
 $gray-darker: #0A0A0A;
 
 
 // Typography
 // ------------------------------------------------------------
 
-$font-family: "europa", Helvetica, Arial, sans-serif;
-$font-family-alt: "hagin-caps", Helvetica, Arial, sans-serif;
+$font-family: "Mallory Book", Helvetica, Arial, sans-serif;
 
-$font-size-small: rem(14);
+$font-size-small: rem(13);
 $font-size-base: rem(18);
-$font-size-large: rem(27);
-$font-size-h5: rem(14);
-$font-size-h4: rem(14);
-$font-size-h3: rem(18);
-$font-size-h2: rem(54);
-$font-size-h1: rem(61);
+$font-size-large: rem(25);
+$font-size-h5: rem(13);
+$font-size-h4: rem(18);
+$font-size-h3: rem(25);
+$font-size-h2: rem(36);
+$font-size-h1: rem(51);
 
-$line-height-base: 1.5;
+$line-height-sm: 1.1;
+$line-height-md: 1.2;
+$line-height-lg: 1.4;
 
 
 // Positioning
@@ -47,10 +48,10 @@ $z-below: -1;
 // Layout
 // ========================================
 
-$grid-gutter: 30px;
-$max-width: 1330px;
+$grid-gutter: 32px;
+$max-width: 1192px;
 $min-width: 320px;
-$side-spacing: 15px;
+$side-spacing: 64px;
 
 
 // Animation
@@ -67,6 +68,16 @@ $bp-lg: 1024px;
 $bp-md: 768px;
 $bp-sm: 568px;
 $bp-xs: 360px;
+
+// Space variables
+// ========================================
+
+$s-xxl: rem(288);
+$s-xl: rem(144);
+$s-lg: rem(72);
+$s-md: rem(36);
+$s-sm: rem(18);
+$s-xs: rem(9);
 
 
 

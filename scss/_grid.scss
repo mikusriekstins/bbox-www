@@ -4,11 +4,8 @@
 
 .grid {
   @include clearfix();
-
-  &--gutter {
-    margin-left: $grid-gutter/-2;
-    margin-right: $grid-gutter/-2;
-  }
+  margin-left: $grid-gutter/-2;
+  margin-right: $grid-gutter/-2;
 
   &--flex {
     display: flex;

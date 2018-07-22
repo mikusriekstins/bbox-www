@@ -5,7 +5,7 @@
 
 p {
   font-size: $font-size-base;
-  line-height: $line-height-base;
+  line-height: $line-height-lg;
   margin: 0 0 1em;
 }
 
@@ -24,16 +24,15 @@ h6, .h6 {
 }
 
 h1, .h1 {
-  font-family: $font-family-alt;
+  font-family: $font-family;
   font-size: $font-size-h1;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: rem(-2);
-  margin: 0;
+  line-height: $line-height-sm;
+  font-weight: 600;
+  margin: $s-sm 0;
 }
 
 h2, .h2 {
-  font-family: $font-family-alt;
+  font-family: $font-family;
   font-size: $font-size-h2;
   letter-spacing: rem(-2);
   font-weight: 700;
@@ -65,7 +64,7 @@ h5, .h5 {
 ul,
 ol {
   font-size: $font-size-base;
-  line-height: $line-height-base;
+  line-height: $line-height-lg;
   padding-left: 1.5em;
   margin: 0;
 }
@@ -90,7 +89,7 @@ table {
   width: 100%;
   margin-bottom: rem(36);
   font-size: $font-size-small;
-  line-height: $line-height-base;
+  line-height: $line-height-lg;
 }
 
 thead {
@@ -116,7 +115,7 @@ dl {
   width: 100%;
   @include clearfix;
   font-size: $font-size-base;
-  line-height: $line-height-base;
+  line-height: $line-height-lg;
   margin: 0;
 
   dt,
@@ -134,19 +133,5 @@ dl {
   dd {
     width: 40%;
     padding-left: $grid-gutter;
-  }
-}
-
-@media screen and (max-width: $bp-lg) {
-  .h1,
-  h1 {
-    margin-bottom: rem(24);
-  }
-}
-
-@media screen and (max-width: $bp-md) {
-  .h1,
-  h1 {
-    font-size: rem(54);
   }
 }

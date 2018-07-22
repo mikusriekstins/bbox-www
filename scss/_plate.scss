@@ -1,0 +1,23 @@
+
+.plate {
+  width: 100%;
+  height: rem(400);
+  background-color: darkviolet;
+  position: relative;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 36px rgba(#000, .15);
+  transition: transform .15s linear;
+  overflow: hidden;
+  right: $s-lg * -1;
+
+  > img {
+    object-fit:cover;
+    object-position:center center;
+  }
+
+  > video {
+    width: 300%;
+    height: 100%;
+    margin-left: -100%;
+  }
+}
