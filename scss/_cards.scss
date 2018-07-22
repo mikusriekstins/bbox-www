@@ -1,0 +1,62 @@
+
+.card {
+  width: 100%;
+  display: block;
+  color: $gray-darker;
+  position: relative;
+  position: relative;
+  transform-style: preserve-3d;
+  //box-shadow: 0 0 36px rgba(#000, .15);
+  transition: transform .15s linear;
+  overflow: hidden;
+  margin-bottom: 32px;
+  tranform: translateZ(100px) perspective(2000px) rotateY(0) rotateX(0);
+
+  &:hover,
+  &:active {
+    color: $gray-darker;
+  }
+
+  &--inverse {
+    color: #fff;
+
+    &:hover,
+    &:active {
+      color: #fff;
+    }
+  }
+
+  &--hero {
+    height: rem(400);
+    background-color: $gray-darker;
+    right: $s-lg * -1;
+    margin-bottom: 0;
+  }
+
+  > img {
+    width: 100%;
+    object-fit:cover;
+    object-position:center center;
+    display: block;
+  }
+
+  > video {
+    width: 300%;
+    height: 100%;
+    margin-left: -100%;
+  }
+
+  &__content {
+    padding: $s-md;
+    position: absolute;
+    z-index: $z-above;
+
+    h2 {
+      margin-bottom: $s-xs;
+    }
+  }
+
+  &--offset {
+    margin-top: $s-xl * 2;
+  }
+}

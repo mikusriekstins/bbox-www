@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M76.4851201,186.017449 C74.5603414,187.112382 73,186.20047 73,184.002676 L73,91.9973235 C73,89.7896627 74.6117687,88.7977741 76.5843856,89.7741565 L163.415614,132.752844 C165.395216,133.732683 165.446881,135.41051 163.51488,136.509551 L76.4851201,186.017449 Z" stroke="rgba(255, 255, 255, .5)" stroke-dasharray="3 5" stroke-width="2"></path>
+    <circle class="oval" stroke="#ffffff" stroke-width="2" fill="#202027" cx="73" cy="188" r="30"></circle>
+
+    <g class="device" transform="translate(43.000000, 40.000000)" stroke-width="2" stroke="#ffffff">
+      <g id="screen" fill="#202027">
+        <path d="M160,10 C160,4.481 155.519,0 150,0 L10,0 C4.481,0 0,4.481 0,10 L0,90 C0,95.519 4.481,100 10,100 L150,100 C155.519,100 160,95.519 160,90 L160,10 Z" stroke="rgba(255, 255, 255, .5)"></path>
+        <rect x="10" y="10" width="140" height="80"></rect>
+      </g>
+      <g id="content-2" transform="translate(90.000000, 40.000000)" fill="#202027">
+        <rect x="0" y="0" width="40" height="50"></rect>
+        <polygon points="20 17 30 32 10 32"></polygon>
+      </g>
+      <g id="content" transform="translate(30.000000, 40.000000)">
+        <polygon fill="#202027" points="10 10 10 0 0 0 0 10"></polygon>
+        <path d="M0,20 L40,20"></path>
+        <path d="M0,30 L40,30"></path>
+        <path d="M0,40 L20,40"></path>
+      </g>
+      <g id="header" transform="translate(10.000000, 17.000000)">
+        <path d="M0,7 L140,7"></path>
+        <path d="M65,0 L75,0"></path>
+        <path d="M48,0 L58,0"></path>
+        <path d="M82,0 L92,0"></path>
+      </g>
+    </g>
+
+    <g class="device" transform="translate(153.000000, 78.000000)" stroke-width="2">
+      <g id="phone" fill="#202027" stroke="rgba(255, 255, 255, .5)">
+        <path d="M50,120 C55.519,120 60,115.519 60,110 L60,10 C60,4.481 55.519,0 50,0 L10,0 C4.481,0 0,4.481 0,10 L0,110 C0,115.519 4.481,120 10,120 L50,120 Z"></path>
+        <rect x="6" y="17" width="48" height="86" stroke="#ffffff"></rect>
+        <path d="M19,9 L41,9"></path>
+        <path d="M19,111 L41,111"></path>
+      </g>
+      <g id="header" transform="translate(6.000000, 23.000000)" stroke="#ffffff">
+        <path d="M33,0 L43,0"></path>
+        <path d="M0,6 L48,6"></path>
+      </g>
+      <g id="content" transform="translate(14.000000, 46.000000)" stroke="#ffffff">
+        <polygon fill="#202027" points="10 10 10 0 0 0 0 10"></polygon>
+        <path d="M0,20 L32,20" id="Shape"></path>
+        <path d="M0,30 L32,30" id="Shape"></path>
+        <path d="M0,40 L16,40" id="Shape"></path>
+      </g>
+    </g>
+
+    <path id="path" d="M76.4851201,186.017449 C74.5603414,187.112382 73,186.20047 73,184.002676 L73,91.9973235 C73,89.7896627 74.6117687,88.7977741 76.5843856,89.7741565 L163.415614,132.752844 C165.395216,133.732683 165.446881,135.41051 163.51488,136.509551 L76.4851201,186.017449 Z" stroke="none" stroke-width="2"></path>
+    <g>
+      <circle id="object" fill-opacity="0.8" fill="#C6A222" cx="0" cy="0" r="10"></circle>
+      <animateMotion dur="3s" repeatCount="indefinite"><mpath xlink:href="#path"></mpath></animateMotion>
+    </g>
+
+  </g>
+</svg>

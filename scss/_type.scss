@@ -34,19 +34,16 @@ h1, .h1 {
 h2, .h2 {
   font-family: $font-family;
   font-size: $font-size-h2;
-  letter-spacing: rem(-2);
-  font-weight: 700;
-  line-height: 1;
-  margin: 0 0 rem(24);
+  font-weight: 600;
+  line-height: $line-height-sm;
+  margin: $s-sm 0;
 }
 
 h3, .h3 {
   font-size: $font-size-h3;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: .05em;
-  line-height: 1.5;
-  margin: 0 0 1em;
+  font-weight: 600;
+  line-height: $line-height-md;
+  margin: $s-sm 0;
 }
 
 h4, .h4 {

@@ -23,6 +23,10 @@
     color :$brand-primary;
   }
 
+  &--dark {
+    color :$gray-darker;
+  }
+
   &--left {
     text-align: left;
   }

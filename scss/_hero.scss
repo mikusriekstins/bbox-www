@@ -1,8 +1,7 @@
 
 .hero {
-  background: #202027;
+  background: $brand-shade;
   background-size: 100% 1px;
   color: #fff;
-  padding: $s-xl 0 $s-xxl;
-  margin-bottom: $s-xxl;
+  padding: $s-xl 0 $s-xl;
 }

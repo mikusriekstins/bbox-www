@@ -1,0 +1,17 @@
+
+.segment {
+  padding: $s-xl 0;
+
+  &--shade {
+    background-color: $brand-shade;
+  }
+
+  &--continue {
+    padding-top: 0;
+  }
+
+  &--overhang {
+    padding-bottom: $s-xl * 4;
+    margin-bottom: $s-xl * -3;
+  }
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <circle id="path-1" cx="24" cy="24" r="24"></circle>
+    <clipPath id="clip-1"><use xlink:href="#path-1"></use></clipPath>
+
+    <rect id="path-3" x="0" y="0" width="88" height="48"></rect>
+    <clipPath id="clip-2"><use xlink:href="#path-3"></use></clipPath>
+
+    <polygon id="path-5" points="0 0 158 0 158 28 0 28"></polygon>
+    <clipPath id="clip-3"><use xlink:href="#path-5"></use></clipPath>
+
+    <path d="M68,4.8 C68,2.14944 65.8249714,0 63.1428571,0 L4.85714286,0 C2.17502857,0 0,2.14944 0,4.8 L0,43.2 C0,45.85056 2.17502857,48 4.85714286,48 L63.1428571,48 C65.8249714,48 68,45.85056 68,43.2 L68,4.8 Z" id="path-7"></path>
+    <clipPath id="clip-4"><use xlink:href="#path-7"></use></clipPath>
+
+    <rect id="path-9" x="0" y="0" width="68" height="48"></rect>
+    <clipPath id="clip-5"><use xlink:href="#path-9"></use></clipPath>
+  </defs>
+
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+    <g id="first" transform="translate(48.000000, 43.000000)">
+      <circle id="frame" stroke="#ffffff" stroke-width="2" cx="25" cy="25" r="25"></circle>
+      <g transform="translate(1.000000, 1.000000)" clip-path="url(#clip-1)">
+        <circle class="target" fill-opacity="0.74902" fill="#C62222" cx="-1" cy="25" r="10"></circle>
+      </g>
+    </g>
+
+    <g id="second" transform="translate(118.000000, 43.000000)">
+      <g>
+        <rect id="frame" stroke="rgba(255, 255, 255, .5)" stroke-width="2" x="0" y="0" width="90" height="50"></rect>
+        <g transform="translate(1.000000, 1.000000)" clip-path="url(#clip-2)">
+          <circle class="target" fill-opacity="0.74902" fill="#C62222" cx="-1" cy="25" r="10"></circle>
+          <polyline stroke="#FFFFFF" stroke-width="2" points="2 50 45 2 88 50"></polyline>
+          <g id="object" transform="translate(13.000000, 17.000000)" stroke="#FFFFFF" stroke-width="2">
+            <rect id="Rectangle-path" fill="#202027" x="0" y="0" width="64" height="8"></rect>
+            <path d="M22,17 L42,17"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="third" transform="translate(48.000000, 113.000000)">
+      <rect id="frame" stroke="rgba(255, 255, 255, .5)" stroke-width="2" x="0" y="0" width="160" height="30"></rect>
+      <g transform="translate(1.000000, 1.000000)" clip-path="url(#clip-3)">
+        <circle class="target" fill-opacity="0.74902" fill="#C62222" cx="-1" cy="15" r="10"></circle>
+        <g id="object" transform="translate(2.000000, 1.000000)" stroke="#FFFFFF" stroke-width="2">
+          <polyline points="0 29 26 0 52 29"></polyline>
+          <rect id="Rectangle-path" x="58" y="9" width="70" height="10"></rect>
+        </g>
+      </g>
+    </g>
+
+    <g id="forth" transform="translate(48.000000, 163.000000)">
+      <path d="M70,5 C70,2.239 67.761,0 65,0 L5,0 C2.239,0 0,2.239 0,5 L0,45 C0,47.761 2.239,50 5,50 L65,50 C67.761,50 70,47.761 70,45 L70,5 Z" id="frame" stroke="rgba(255, 255, 255, .5)" stroke-width="2"></path>
+      <g transform="translate(1.000000, 1.000000)" clip-path="url(#clip-4)">
+        <circle class="target" fill-opacity="0.74902" fill="#C62222" cx="-1" cy="25" r="10"></circle>
+        <polygon id="object" stroke="#FFFFFF" stroke-width="2" points="26 15 26 35 47.955 25"></polygon>
+      </g>
+    </g>
+
+    <g id="fifth" transform="translate(138.000000, 163.000000)">
+      <rect id="frame" stroke="rgba(255, 255, 255, .5)" stroke-width="2" x="0" y="0" width="70" height="50"></rect>
+      <g transform="translate(1.000000, 1.000000)" clip-path="url(#clip-5)">
+        <circle class="target" fill-opacity="0.74902" fill="#C62222" cx="-1" cy="25" r="10"></circle>
+        <g id="object" transform="translate(25.000000, 15.000000)" stroke="#FFFFFF" stroke-width="2">
+          <path d="M20,0 L0,20"></path>
+          <path d="M20,20 L0,0"></path>
+        </g>
+      </g>
+    </g>
+
+  </g>
+
+  <style>
+    @keyframes slide {
+      from { transform: translateX(-11px); }
+      to { transform: translateX(220px); }
+    }
+
+    .target { animation: slide 3s linear infinite; transform: translateX(-11px); }
+    #first .target { animation-delay: .3s; }
+    #second .target { animation-delay: .6s; }
+    #third .target { animation-delay: .9s; }
+    #forth .target { animation-delay: 1.2s; }
+    #fifth .target { animation-delay: 1.5s; }
+
+  </style>
+</svg>
