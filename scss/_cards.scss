@@ -12,6 +12,11 @@
   margin-bottom: 32px;
   tranform: translateZ(100px) perspective(2000px) rotateY(0) rotateX(0);
 
+  .text--muted {
+    color: inherit;
+    opacity: .5;
+  }
+
   &:hover,
   &:active {
     color: $gray-darker;

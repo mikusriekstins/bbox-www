@@ -5,9 +5,23 @@
 .header {
   width: 100%;
   padding: $s-md 0;
-  margin-bottom: rem(-102);
   position: fixed;
-  background: linear-gradient(rgba($gray-darker, .5), rgba($gray-darker, 0));
-  z-index: $z-above;
+  z-index: $z-more-above;
+  @include clearfix;
+
+  .logo {
+    float: left;
+  }
+
+  .nav__toggle {
+    float: right;
+  }
+
+  &--dark {
+    .nav__toggle > svg,
+    .logo > svg {
+      fill: $gray-darker;
+    }
+  }
 }
 

@@ -23,3 +23,12 @@ window.addEventListener('mousemove', function (e) {
     over.style.transform = 'translateZ(100px) perspective(2000px) rotateY('+ xAxis +'deg) rotateX('+ yAxis +'deg)';
   }
 });
+
+let navToggles = document.querySelectorAll('[data-nav-toggle]');
+for (var i=0; i<navToggles.length; i++) {
+  let navToggle = navToggles[i];
+  navToggle.addEventListener('click', function(){
+    document.querySelector('.nav').classList.toggle('is-active');
+    document.querySelector('body').classList.toggle('is-fixed');
+  });
+}

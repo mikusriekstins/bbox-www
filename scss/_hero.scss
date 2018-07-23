@@ -4,4 +4,34 @@
   background-size: 100% 1px;
   color: #fff;
   padding: $s-xl 0 $s-xl;
+  position: relative;
+  overflow: hidden;
+
+  &--inverse {
+    color: $gray-darker;
+  }
+
+  &--cover {
+    padding: $s-xl*3 0 $s-lg;
+
+    > .container {
+      position: relative;
+      z-index: $z-above;
+    }
+  }
+
+  .text--muted {
+    color: inherit;
+    opacity: .5;
+  }
+
+  &__cover {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit:cover;
+    object-position:center center;
+    display: block;
+  }
 }

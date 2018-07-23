@@ -18,7 +18,7 @@ html {
 body {
   font-family: $font-family;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   height: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -27,26 +27,30 @@ body {
   color: #fff;
   overflow-x: hidden;
   margin: 0;
+
+  &.is-fixed {
+    overflow-y: hidden;
+  }
 }
 
-@media screen and (min-width: $bp-xl) {
+@media screen and (min-width: $bp-xl+20) {
   html { font-size: 125%; }
 }
 
-@media screen and (max-width: $bp-lg) {
-  html { font-size: 87.5%; }
-}
+//@media screen and (max-width: $bp-md) {
+//  html { font-size: 87.5%; }
+//}
 
 a {
-  color: $brand-primary;
+  color: #fff;
   cursor: pointer;
   text-decoration: none;
   transition: color .2s $bezier;
 
   &:focus,
   &:hover {
-    text-decoration: none;
-    color: $gray-dark;
+    text-decoration: underline;
+    color: #fff;
   }
 }
 
@@ -58,8 +62,8 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  background-color: rgba($brand-primary, .15);
-  margin: rem(36) 0;
+  background-color: rgba(#fff, .15);
+  margin: $s-lg 0;
   clear: both;
 }
 

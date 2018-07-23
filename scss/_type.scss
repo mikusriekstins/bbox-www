@@ -27,21 +27,18 @@ h1, .h1 {
   font-family: $font-family;
   font-size: $font-size-h1;
   line-height: $line-height-sm;
-  font-weight: 600;
   margin: $s-sm 0;
 }
 
 h2, .h2 {
   font-family: $font-family;
   font-size: $font-size-h2;
-  font-weight: 600;
   line-height: $line-height-sm;
   margin: $s-sm 0;
 }
 
 h3, .h3 {
   font-size: $font-size-h3;
-  font-weight: 600;
   line-height: $line-height-md;
   margin: $s-sm 0;
 }
@@ -85,8 +82,9 @@ blockquote {
 table {
   width: 100%;
   margin-bottom: rem(36);
-  font-size: $font-size-small;
+  font-size: $font-size-base;
   line-height: $line-height-lg;
+  border-collapse: collapse;
 }
 
 thead {
@@ -95,16 +93,17 @@ thead {
 
 th {
   text-align: left;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 th,
 td {
-  padding: rem(12) 0 rem(12) 0;
-  border-bottom: solid 1px #D9D9D9;
+  padding: $s-sm 0;
+  border-bottom: solid 1px rgba(#fff, .15);
+  color: #828282;
 
   &:last-child {
-    padding-right: rem(12);
+    //text-align: right;
   }
 }
 

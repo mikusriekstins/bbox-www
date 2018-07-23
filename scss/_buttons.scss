@@ -4,20 +4,21 @@
 .button {
   display: inline-block;
   appearance: none;
-  padding: rem(8) rem(24);
-  background: transparent;
-  color: $brand-primary;
+  padding: $s-sm $s-md;
+  background: #1772B7;
+  color: #fff;
   font-size: $font-size-base;
+  font-weight: 500;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  text-decoration: none;
   margin: 0 rem(4) rem(8);
-  border-radius: 3px;
-  border: solid 1px $brand-primary;
+  border: 0;
   transition: background-color .2s $bezier, color .2s $bezier, border-color .2s $bezier;
 
   &:focus,
   &:hover {
-    background-color: $gray-dark;
-    border-color: $gray-dark;
+    background-color: #DD3208;
     color: #fff;
   }
 }

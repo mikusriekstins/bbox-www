@@ -14,4 +14,19 @@
     padding-bottom: $s-xl * 4;
     margin-bottom: $s-xl * -3;
   }
+
+  &--light {
+    color: $gray-darker;
+    background-color: #fff;
+  }
+
+  &--image {
+    padding: 0;
+
+    > img {
+      display: block;
+      margin: 0;
+      width: 100%;
+    }
+  }
 }

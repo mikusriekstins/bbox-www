@@ -48,7 +48,7 @@
 
     <path id="path" d="M76.4851201,186.017449 C74.5603414,187.112382 73,186.20047 73,184.002676 L73,91.9973235 C73,89.7896627 74.6117687,88.7977741 76.5843856,89.7741565 L163.415614,132.752844 C165.395216,133.732683 165.446881,135.41051 163.51488,136.509551 L76.4851201,186.017449 Z" stroke="none" stroke-width="2"></path>
     <g>
-      <circle id="object" fill-opacity="0.8" fill="#C6A222" cx="0" cy="0" r="10"></circle>
+      <circle id="object" fill-opacity="0.8" fill="#7EBA01" cx="0" cy="0" r="10"></circle>
       <animateMotion dur="3s" repeatCount="indefinite"><mpath xlink:href="#path"></mpath></animateMotion>
     </g>
 
