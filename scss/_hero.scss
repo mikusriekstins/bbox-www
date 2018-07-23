@@ -7,8 +7,13 @@
   position: relative;
   overflow: hidden;
 
-  &--inverse {
+  &--light {
     color: $gray-darker;
+  }
+
+  &--page {
+    background-color: $brand-shade;
+    padding: $s-xl 0 $s-lg;
   }
 
   &--cover {
