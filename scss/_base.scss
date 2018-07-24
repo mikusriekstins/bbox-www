@@ -42,7 +42,7 @@ body {
 //}
 
 a {
-  color: #fff;
+  color: $brand-primary;
   cursor: pointer;
   text-decoration: none;
   transition: color .2s $bezier;

@@ -1,0 +1,15 @@
+
+// --------------------------------------------------------------------------
+// Overlay
+// --------------------------------------------------------------------------
+
+.overlay {
+  background-color: $gray-darker;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: $z-top;
+  transform: translate3d(0, -100%, 0);
+}

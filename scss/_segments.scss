@@ -2,6 +2,10 @@
 .segment {
   padding: $s-xl 0;
 
+  &--dark {
+    background-color: #050505;
+  }
+
   &--shade {
     background-color: $brand-shade;
   }

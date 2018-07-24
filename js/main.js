@@ -1,4 +1,39 @@
 
+document.addEventListener("DOMContentLoaded", function(event) {
+  Barba.Pjax.start();
+
+  var FadeTransition = Barba.BaseTransition.extend({
+    start: function() {
+      Promise
+        .all([this.newContainerLoading, this.fadeOut()])
+        .then(this.fadeIn.bind(this));
+    },
+
+    fadeOut: function() {
+      return $('.overlay').animate({ top: '100%' }).promise();
+    },
+
+    fadeIn: function() {
+      var _this = this;
+      var $el = $(this.newContainer);
+
+      $(this.oldContainer).hide();
+      $(window).scrollTop(0);
+
+      $el.css({ visibility : 'visible' });
+
+      $('.overlay').animate({ top: '200%' }, 400, function() {
+        $('.overlay').css({ top: 0 });
+        _this.done();
+      });
+    },
+  });
+
+  Barba.Pjax.getTransition = function() {
+    return FadeTransition;
+  };
+});
+
 let cards = document.querySelectorAll('.card');
 let over = false;
 let mouseMove = false;
