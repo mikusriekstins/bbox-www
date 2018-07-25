@@ -2,8 +2,8 @@
 .segment {
   padding: $s-xl 0;
 
-  &--dark {
-    background-color: #050505;
+  &--gray {
+    background-color: $gray-dark;
   }
 
   &--shade {

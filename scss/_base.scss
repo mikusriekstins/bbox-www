@@ -33,16 +33,16 @@ body {
   }
 }
 
-@media screen and (min-width: $bp-xl+20) {
+@media screen and (min-width: $bp-xl +20) {
   html { font-size: 125%; }
 }
 
-//@media screen and (max-width: $bp-md) {
-//  html { font-size: 87.5%; }
-//}
+@media screen and (max-width: $bp-md -20) {
+  html { font-size: 87.5%; }
+}
 
 a {
-  color: $brand-primary;
+  color: #fff;
   cursor: pointer;
   text-decoration: none;
   transition: color .2s $bezier;

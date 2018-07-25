@@ -49,6 +49,7 @@
 @include grid-col(5, 12);
 
 @include grid-push(1, 3);
+@include grid-push(1, 2);
 @include grid-push(2, 3);
 @include grid-push(1, 4);
 @include grid-push(1, 6);
